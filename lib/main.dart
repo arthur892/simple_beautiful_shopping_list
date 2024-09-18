@@ -13,6 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Simple Beautiful Shopping App',
+      debugShowCheckedModeBanner: false,
       home: MainScreen(),
     );
   }
