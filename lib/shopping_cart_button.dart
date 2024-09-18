@@ -10,7 +10,7 @@ class ShoppingCartButtonLukas extends StatelessWidget {
       children: [
         Positioned(
           child: Container(
-            width: 96.0,
+            width: 80.0,
             decoration: const BoxDecoration(
               color: Colors.pink,
               borderRadius: BorderRadius.only(
@@ -22,7 +22,10 @@ class ShoppingCartButtonLukas extends StatelessWidget {
             ),
           ),
         ),
-        const Icon(Icons.shopping_cart_outlined, size: 32),
+        const Positioned(
+          right: 16,
+          child: Icon(Icons.shopping_cart_outlined, size: 32),
+        ),
       ],
     );
   }

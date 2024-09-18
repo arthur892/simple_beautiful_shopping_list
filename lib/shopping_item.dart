@@ -11,7 +11,7 @@ class ShoppingItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 90,
+      height: 80,
       decoration: const BoxDecoration(
           color: Colors.deepPurpleAccent,
           borderRadius: BorderRadius.all(Radius.circular(8))),
