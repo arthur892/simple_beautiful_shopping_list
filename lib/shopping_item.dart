@@ -18,7 +18,7 @@ class ShoppingItem extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const SizedBox(width: 16),
+          const SizedBox(width: 24),
           ShoppingItemNameAndPrice(name: name, price: price),
           const Spacer(),
           const ShoppingCartButtonLukas(),
