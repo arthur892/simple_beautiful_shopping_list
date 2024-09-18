@@ -24,7 +24,7 @@ class ShoppingItemNameAndPrice extends StatelessWidget {
           ),
         ),
         Text(
-          "${price.toStringAsFixed(2)} €",
+          "  ${price.toStringAsFixed(2)} €",
           style: const TextStyle(
             fontWeight: FontWeight.bold,
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_beautiful_shopping_list/shopping_cart_button.dart';
 import 'package:simple_beautiful_shopping_list/shopping_item_name_and_price.dart';
 
 class ShoppingItem extends StatelessWidget {
@@ -11,14 +12,16 @@ class ShoppingItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 90,
-      padding: const EdgeInsets.all(8),
-      color: Colors.deepPurpleAccent,
+      decoration: const BoxDecoration(
+          color: Colors.deepPurpleAccent,
+          borderRadius: BorderRadius.all(Radius.circular(8))),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          const SizedBox(width: 16),
           ShoppingItemNameAndPrice(name: name, price: price),
-          const Icon(Icons.shopping_cart_outlined, size: 32),
+          const Spacer(),
+          const ShoppingCartButtonLukas(),
         ],
       ),
     );
