@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:simple_beautiful_shopping_list/shopping_list_content.dart';
+import 'package:simple_beautiful_shopping_list/models/product.dart';
+import 'package:simple_beautiful_shopping_list/presentation/shopping_list_content.dart';
 
 class MainScreen extends StatelessWidget {
-  const MainScreen({super.key});
+  const MainScreen({super.key, required this.products});
+
+  final List<Product> products;
 
   @override
   Widget build(BuildContext context) {
@@ -14,10 +17,10 @@ class MainScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.purple,
       ),
-      body: const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
         // Die Column in diesem Widget soll durch eine ListView ersetzt werden.
-        child: ShoppingListContent(),
+        child: ShoppingListContent(products: products),
       ),
     );
   }

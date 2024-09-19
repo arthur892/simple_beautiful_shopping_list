@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ShoppingItemNameAndPrice extends StatelessWidget {
-  const ShoppingItemNameAndPrice({
+class ShoppingListItemInformation extends StatelessWidget {
+  const ShoppingListItemInformation({
     super.key,
     required this.name,
     required this.price,
