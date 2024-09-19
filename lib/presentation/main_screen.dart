@@ -1,6 +1,9 @@
+// ignore_for_file: unused_import
 import 'package:flutter/material.dart';
 import 'package:simple_beautiful_shopping_list/models/product.dart';
-import 'package:simple_beautiful_shopping_list/presentation/list_content.dart';
+import 'package:simple_beautiful_shopping_list/presentation/list_content/builder_list_view_list_content.dart';
+import 'package:simple_beautiful_shopping_list/presentation/list_content/column_list_content.dart';
+import 'package:simple_beautiful_shopping_list/presentation/list_content/separated_list_view_list_content.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key, required this.products});
@@ -19,8 +22,9 @@ class MainScreen extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
-        // Die Column in diesem Widget soll durch eine ListView ersetzt werden.
-        child: ListContent(products: products),
+        // child: SeparatedListViewListContent(products: products),
+        // child: BuilderListViewListContent(products: products),
+        child: ColumnListContent(products: products),
       ),
     );
   }

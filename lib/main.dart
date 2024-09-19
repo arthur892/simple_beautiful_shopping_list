@@ -7,6 +7,8 @@ void main() {
     Product("Tomate", 19.99),
     Product("Apfel", 7.99),
     Product("Wassermelone", 34.99),
+    Product("Tee", 12.99),
+    Product("Lego", 649.99)
   ];
 
   runApp(MainApp(products: products));
@@ -18,7 +20,6 @@ class MainApp extends StatelessWidget {
 
   final List<Product> products;
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
