@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ShoppingCartButton extends StatelessWidget {
-  const ShoppingCartButton({super.key});
+class CartButton extends StatelessWidget {
+  const CartButton({super.key});
 
   @override
   Widget build(BuildContext context) {

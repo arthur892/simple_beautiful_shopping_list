@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:simple_beautiful_shopping_list/models/product.dart';
-import 'package:simple_beautiful_shopping_list/presentation/shopping_list_entry.dart';
+import 'package:simple_beautiful_shopping_list/presentation/list_entry.dart';
 
-class ShoppingListContent extends StatelessWidget {
-  const ShoppingListContent({super.key, required this.products});
+class ListContent extends StatelessWidget {
+  const ListContent({super.key, required this.products});
 
   final List<Product> products;
 
@@ -18,11 +18,11 @@ class ShoppingListContent extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
         ),
         const SizedBox(height: 16),
-        ShoppingListEntry(product: products[0]),
+        ListEntry(product: products[0]),
         const SizedBox(height: 16),
-        ShoppingListEntry(product: products[1]),
+        ListEntry(product: products[1]),
         const SizedBox(height: 16),
-        ShoppingListEntry(product: products[2]),
+        ListEntry(product: products[2]),
       ],
     );
   }

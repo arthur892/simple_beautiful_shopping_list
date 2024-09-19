@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:simple_beautiful_shopping_list/models/product.dart';
-import 'package:simple_beautiful_shopping_list/presentation/shopping_cart_button.dart';
-import 'package:simple_beautiful_shopping_list/presentation/shopping_list_item_information.dart';
+import 'package:simple_beautiful_shopping_list/presentation/cart_button.dart';
+import 'package:simple_beautiful_shopping_list/presentation/list_entry_information.dart';
 
-class ShoppingListEntry extends StatelessWidget {
-  const ShoppingListEntry({super.key, required this.product});
+class ListEntry extends StatelessWidget {
+  const ListEntry({super.key, required this.product});
 
   final Product product;
 
@@ -19,12 +19,12 @@ class ShoppingListEntry extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const SizedBox(width: 24),
-          ShoppingListItemInformation(
+          ListEntryInformation(
             name: product.name,
             price: product.price,
           ),
           const Spacer(),
-          const ShoppingCartButton(),
+          const CartButton(),
         ],
       ),
     );
