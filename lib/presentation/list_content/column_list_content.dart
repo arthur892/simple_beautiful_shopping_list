@@ -9,7 +9,14 @@ class ColumnListContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView.separated(
+            itemBuilder: (contex, index) => ListEntry(product: products[index]),
+            separatorBuilder: (contex, index) => const SizedBox(
+                  height: 16,
+                ),
+            itemCount: products.length)
+
+        /*Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         ListEntry(product: products[0]),
@@ -22,6 +29,7 @@ class ColumnListContent extends StatelessWidget {
         const SizedBox(height: 16),
         ListEntry(product: products[4]),
       ],
-    );
+    )*/
+        ;
   }
 }

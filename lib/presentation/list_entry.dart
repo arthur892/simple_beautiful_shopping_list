@@ -13,8 +13,7 @@ class ListEntry extends StatelessWidget {
     return Container(
       height: 80,
       decoration: const BoxDecoration(
-          color: Colors.deepPurpleAccent,
-          borderRadius: BorderRadius.all(Radius.circular(8))),
+          color: Colors.lightBlueAccent, borderRadius: BorderRadius.all(Radius.circular(8))),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [

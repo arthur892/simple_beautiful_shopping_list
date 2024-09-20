@@ -12,7 +12,7 @@ class CartButton extends StatelessWidget {
           child: Container(
             width: 80.0,
             decoration: const BoxDecoration(
-              color: Colors.pink,
+              color: Colors.blue,
               borderRadius: BorderRadius.only(
                 topRight: Radius.circular(8),
                 topLeft: Radius.circular(48),
